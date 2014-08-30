@@ -1,0 +1,252 @@
+﻿
+
+    <!DOCTYPE html>
+    <!--TODO : unweebafy-->
+    <!-- homepage by noha javascript by nullbyte -->
+     
+    <html>
+     
+    <head>
+     
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" href="animations.css">
+     
+    <title>Browser Home</title>
+     
+    </head>
+    <style>
+	
+    a{
+            color:#5d5d5d;
+            font-family:"AkzidenzGrotesk";
+            font-size:30px;
+            text-decoration:none;
+            margin-left:5px;
+            transition-property: color;
+            transition-duration: .1s;
+            transition-timing-function: linear;
+    }
+    body{
+            padding-left:10px;
+            padding-right:10px;
+            font-family:"AkzidenzGrotesk";
+            color:#a98d9b;
+            font-size:45px;
+            background:#3f3f3f;
+    }
+     
+    span{
+            margin-left:10px;
+            text-family:"Sans";
+            text-align: center;
+    }
+     
+    a:hover { color:#a98d9b}
+     
+    input[type=text] {
+            width: 18px;
+            padding: 3px;
+             font-size:25px;
+            right:5px;bottom:5px;
+            border: 1px solid #3a3a3a;
+            transition-property: all;
+            transition-duration: .5s;
+            transition-timing-function: ease;
+            color: #5d5d5d;
+            background-color: #3a3a3a;
+			background-position: -2px 5px;
+		--	background-image: url('/home/akarin/.homepage/searchicon.png'); 
+			background-repeat: no-repeat;
+    }
+     
+    input[type=text]:hover {
+            border-color: #3a3a3a;
+            transition-property: all;
+            transition-duration: .5s;
+            transition-timing-function: ease;
+            color: #a98d9b;
+			width:230px;
+			background-position: 227px 5px;
+			padding-right: 20px;
+    }
+	input[type=text]:focus {
+            border-color: #3a3a3a;
+            transition-property: all;
+            transition-duration: .5s;
+            transition-timing-function: ease;
+            color: #5d5d5d;
+			width:230px;
+			background-position: 227px 5px;
+			padding-right: 20px;
+	}
+     
+    .boxed {
+            border: 0px solid #3f3f3f;
+            padding: 5px;
+            color: #a98d9b;
+            background-color: none;
+            width: 900px;
+            margin-left: auto;
+            margin-right: -600px;
+            margin-bottom: 200px;
+            position:absolute;
+            right: 0%;
+	    bottom: 0%;
+	    text-align:right;
+            transition-property: all;
+            transition-duration: .5s;
+            transition-timing-function: ease;
+	    position: fixed;
+	    overflow-y: hidden;
+	    overflow-x: hidden;
+    }
+
+    .boxed:hover {
+            border: 0px solid #3f3f3f;
+            padding: 5px;
+            color: #a98d9b;
+            background-color: none;
+            width: 900px;
+            margin-left: auto;
+            margin-right: 0px;
+	    padding-right:40px;
+            margin-bottom: 200px;
+            position:absolute;
+            right: 0%;
+	    bottom: 0%;
+	    text-align:right;
+            transition-property: all;
+            transition-duration: .5s;
+            transition-timing-function: ease;
+			background-position: 227px 0px;
+	    position: fixed;
+	    overflow-y: hidden;
+	    overflow-x: hidden;
+    }
+
+    .boxed:focus {
+            border: 0px solid #3f3f3f;
+            padding: 5px;
+            color: #a98d9b;
+            background-color: none;
+            width: 900px;
+            margin-left: auto;
+            margin-right: 0px;
+	    padding-right:40px;
+            margin-bottom: 200px;
+            position:absolute;
+            right: 0%;
+	    bottom: 0%;
+	    text-align:right;
+            transition-property: all;
+            transition-duration: .5s;
+            transition-timing-function: ease;
+			background-position: 227px 0px;
+	    position: fixed;
+	    overflow-y: hidden;
+	    overflow-x: hidden;
+    }
+
+     
+    h1 {
+          padding-bottom: -600px;
+		  position: absolute;
+		  visibility: hidden;
+		  margin-top: -200px;
+		  margin-left: -745px;
+		  left: 100%;
+		  top: 100%;
+	    position: fixed;
+	    overflow-y: hidden;
+	    overflow-x: hidden;
+		  
+    }
+
+     
+    </style>
+            <body>
+            <h1 align="right" id="message" class="expandUp"></h1>
+                <script type="text/javascript">
+                        var d = new Date();
+                        var n = d.getHours();
+ 
+                        if ( n == 23 || n == 0) {
+                                message = "<img src='goodnight.png'></img>";
+                        } else if ( n >= 1 && n <= 4 ) {
+                                message = "<img src='goodnight.png'></img>";
+                        } else if ( n >= 5 && n <= 11 ) {
+                                message = "<img src='goodmorning.png'></img>";
+                        } else if ( n >= 12 && n <= 17 ) {
+                                message = "<img src='goodafternoon.png'></img>";
+                        } else if ( n >= 18 && n <= 22 ) {
+                                message = "<img src='goodevening.png'></img>";
+                        }
+ 
+                        document.getElementById("message").innerHTML = message;
+                </script>
+
+
+
+
+            <div class="boxed" class=slideUp>
+
+
+            <a style="padding-left:10px" href="http://konachan.com">konachan</a>
+            <a href="http://yande.re">yande.re</a>
+            <a href="http://4chan.org/w/">yotsuba</a>
+            <a href="http://zerochan.net">zerochan</a>
+            </br>
+
+            <a style="padding-left:10px" href="http://deviantart.com/messages">deviantart</a>
+            <a href="http://tumblr.com">tumblr</a>
+            <a href="http://somethingawful.com">somethingawful</a>
+			
+            </br>
+
+            <a style="padding-left:10px" href="http://discogs.com">discogs</a>
+            <a href="http://bandcamp.com">bandcamp</a>
+            <a href="http://soundcloud.com">soundcloud</a>
+
+            </br>
+
+            <a style="padding-left:10px" href="http://mail.google.com">post</a>
+            <a href="https://my.cl.ly">cloud</a>
+            <a href="http://images.google.com/">image</a>
+            <a href="http://translate.google.com">translate</a>
+            </br>
+
+
+	    <a style="padding-left:10px" href="http://bakabt.me/browse.php">bakabt</a>
+	    <a href="http://nyaa.eu">nyaa</a>
+	    <a href="http://commiesubs.com">commie</a>
+	    <a href="http://g.e-hentai.org">g.e</a>
+	    </br>
+
+
+            <a style="padding-left:10px" href="http://vimeo.com">vimeo</a>
+            <a href="http://youtube.com/feed/subscriptions">youtube</a>
+            <a href="http://twitch.tv/directory/following">twitch</a>
+
+
+		<form method="get" action="http://www.google.com/search"> <input type="text" placeholder="" value=""
+            name="q" autocomplete="off">
+           
+            </div>   
+
+	 
+	 <script>
+	$(window).scroll(function() {
+		$('#animatedElement').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+400) {
+				$(this).addClass("slideUp");
+			}
+		});
+	});
+</script>
+
+
+    </body>
+

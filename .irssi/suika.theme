@@ -1,0 +1,501 @@
+default_color = "-1";
+
+
+info_eol = "false";
+
+
+replaces = { };
+
+
+abstracts = {
+  action = "$0-";
+  action_core = "$0-";
+  ban = "$0-";
+  chanhost = "$0-";
+  chanhost_hilight = "$0-";
+  channel = "$0-";
+  channelhilight = "$0-";
+  channick = "%r$0-%n";
+  channick_hilight = "%r$0-%n";
+  comment = "$0-";
+  ctcp = "$0-";
+  dcc = "$0-";
+  dccaction = "$0-";
+  dccfile = "$0-";
+  dccmsg = "$1-$0-";
+  dccownaction = "$0-";
+  dccownaction_target = "$0-$1-";
+  dccownmsg = "$0-$1-";
+  dccownnick = "%r$0-%n";
+  dccquerynick = "%r$0-%n";
+  error = "$0-";
+  hilight = "$0-";
+  line_start = "";
+  menick = "%g$0-%n";
+  mode = "$0-";
+  msgchannel = "$0-";
+  msgnick = "%r$0-%n$1-";
+  names_channel = "%r$0-%n";
+  names_nick = "%r$0-%n$1-";
+  names_users = "%r$0-%n";
+  netjoin = "$0-";
+  netsplit = "$0-";
+  nick = "%r$0-%n";
+  nickhost = "%r$0-%n";
+  notice = "$0-";
+  ownaction = "$0-";
+  ownaction_target = "$0-$1-";
+  ownctcp = "$0-$1-";
+  ownmsgnick = "%r$0-%n$1-";
+  ownnick = "%r$0-%n";
+  ownnotice = "$0-$1-";
+  ownprivmsg = "$0-$1-";
+  ownprivmsgnick = "%r$0-%n";
+  ownprivnick = "%r$0-%n";
+  privmsg = "$0-$1-";
+  privmsgnick = "%r$0-%n";
+  prompt = "";
+  pubaction = "$0-";
+  pubmsghinick = "$1-%r$0-%n$2-";
+  pubmsgmenick = "%r$0-%n$1-";
+  pubmsgnick = "%r$0-%n$1-";
+  pubnick = "%r$0-%n";
+  pubnotice_channel = "$0-";
+  pvtaction = "$0-";
+  pvtaction_query = "$0-";
+  pvtnotice_host = "$0-";
+  reason = "$0-";
+  sb = "%n$*%n ";
+  sb_act_hilight = "$*";
+  sb_act_hilight_color = "$1-";
+  sb_act_msg = "$*";
+  sb_act_sep = " ";
+  sb_act_text = "$*";
+  sb_background = "%n";
+  sb_default_bg = "%n";
+  sb_info_bg = "%n";
+  sb_prompt_bg = "%n";
+  sbaway = " AWAY";
+  sbmode = " +$*";
+  sbnickmode = "$r$0-%n";
+  sbservertag = ":$0-";
+  server = "$0-";
+  servernotice = "$0-";
+  timestamp = "%r$0-%n";
+  wallop = "%r$0-%n";
+  wallop_action = "%r$0-%n";
+  wallop_nick = "%r$0-%n";
+};
+
+
+formats = {
+
+  "fe-common/core" = {
+    alias_added = "Alias $0 added";
+    alias_not_found = "No such alias: $0";
+    alias_removed = "Alias $0 removed";
+    aliaslist_footer = "";
+    aliaslist_header = "Aliases:";
+    aliaslist_line = "$[16]0 %|$1";
+    away_msgs = "$1 new messages in awaylog: ";
+    bind_key = "$[!16]0 $1 $2";
+    bind_unknown_id = "Unknown bind action: $0";
+    cant_connect = "Unable to connect: $0:$1 ($2)";
+    chan_not_found = "Not joined to such channel";
+    chan_not_synced = "Channel not fully synchronized yet, try again after a while";
+    chanlist_header = "You are on the following channels:";
+    chanlist_line = "$[-8]0 %|+$1 ($2): $3";
+    channel_move_notify = "$0 is already joined in window $1, use /WINDOW ITEM MOVE $0 to move it to this window";
+    chansetup_added = "Channel $0 saved";
+    chansetup_footer = "";
+    chansetup_header = "Channel          Network Password Settings";
+    chansetup_line = "$[16]0 %|$[8]1 $[8]2 $3";
+    chansetup_not_found = "Channel $0 not found";
+    chansetup_removed = "Channel $0 removed";
+    command_ambiguous = "Ambiguous command: $0";
+    command_unknown = "Unknown command: $0";
+    config_modified = "Configuration file was modified since irssi was last started.  Do you want to overwrite the possible \012changes?";
+    config_reloaded = "Reloaded configuration";
+    config_saved = "Saved configuration to file $0";
+    connecting = "Connecting to $0 [$1:$2]";
+    connection_established = "Connection to $0 established";
+    connection_lost = "Connection lost to $0";
+    current_channel = "Current channel: $0";
+    daychange = "";
+    disconnected = "Disconnected from $0 ($1)";
+    endofnames = "";
+    error_server_sticky = "Window's server is sticky and it cannot be changed without -unsticky option";
+    format_item = "$0 = $1";
+    format_subtitle = "[$0]";
+    format_title = "%:[$0] - [$1]%:";
+    glib_error = "GLib $0 $1";
+    hilight_footer = "";
+    hilight_header = "Highlights:";
+    hilight_line = "$[-4]0 $1 $2 $3 $4 $5";
+    hilight_not_found = "Highlight not found: $0";
+    hilight_removed = "Highlight removed: $0";
+    ignore_footer = "";
+    ignore_header = "Ignorance List:";
+    ignore_line = "$[-4]0 $1: $2 $3 $4";
+    ignore_no_ignores = "There are no ignores";
+    ignore_not_found = "$0 is not being ignored";
+    ignored = "Ignoring $1 from $0";
+    illegal_proto = "Command isn't designed for the chat protocol of the active server";
+    invite = "%r$1%n: %n$0 has invited you to join";
+    join = "%n$2 %r× %n%|$0 joins";
+    # someone joins
+    kick = "%n$1 %r× %n%|$0 was kicked by $2 ($3)";
+    # someone is kicked
+    lag_disconnected = "No PONG reply from server $0 in $1 seconds, disconnecting";
+    line_start = "{line_start}";
+    line_start_irssi = "{line_start}";
+    log_closed = "Log file $0 closed";
+    log_create_failed = "Couldn't create log file $0 ($1)";
+    log_list = "$0 $1: $2 $3$4";
+    log_list_footer = "";
+    log_list_header = "Logs:";
+    log_locked = "Log file $0 is locked, probably by another running Irssi";
+    log_not_open = "Log file $0 not open";
+    log_opened = "Log file $0 opened";
+    log_started = "Started logging to file $0";
+    log_stopped = "Stopped logging to file $0";
+    looking_up = "Looking up $0";
+    module_already_loaded = "Module $0/$1 already loaded";
+    module_footer = "";
+    module_header = "Module               Type    Submodules";
+    module_invalid = "$0/$1 isn't Irssi module";
+    module_line = "$[!20]0 $[7]1 $2";
+    module_load_error = "Error loading module $0/$1 ($2)";
+    module_loaded = "Loaded module $0/$1";
+    module_not_loaded = "Module $0/$1 is not loaded";
+    module_unloaded = "Unloaded module $0/$1";
+    msg_private = "$0$1$2";
+    msg_private_query = "$0$1$2";
+    names_users = "%r$0$1%n    ";
+    names_nick = "%r$0$1%n    ";
+    names_nick_halfop = "%r$0$1%n    ";
+    names_nick_op = "%r$0$1%n    ";
+    names_nick_voice = "%r$0$1%n    ";
+    names_prefix = "%r$1%n";
+    new_topic = "%n$1 %r× %n%|$0 changes topic to \"$2\"";
+    # new topic
+    nick_changed = "%r$0 is now known as $1%n";
+    # nick changed
+    no_away_msgs = "No new messages in awaylog";
+    no_connected_servers = "Not connected to any servers";
+    no_msgs_got = "You have not received a message from anyone yet";
+    no_msgs_sent = "You have not sent a message to anyone yet";
+    no_query = "No query with $0";
+    not_connected = "Not connected to server";
+    not_enough_params = "Not enough parameters given";
+    not_good_idea = "Doing this is not a good idea. Add -YES if you really mean it";
+    not_in_channels = "You are not on any channels";
+    not_invited = "You have not been invited to a channel!";
+    not_joined = "Not joined to any channel";
+    not_toggle = "Value must be either ON, OFF or TOGGLE";
+    option_ambiguous = "Ambiguous option: $0";
+    option_missing_arg = "Missing required argument for: $0";
+    option_unknown = "Unknown option: $0";
+    overwrite_config = "Overwrite config (y/N)?";
+
+    own_msg = "%r$0 %n%|$1";
+    # i say something
+    own_msg_channel = "$3$0$1$2";
+    own_msg_private = "$0$1";
+    own_msg_private_query = "$2$1";
+    part = "%n$2 %r× %n%|$0 parts";
+    # someone parts
+    perl_error = "Perl error: $0";
+    pubmsg = "%n$0 %n%|$1";
+    # someone says anything
+    pubmsg_channel = "$3$0$1$2";
+    pubmsg_hilight = "%n$0$1 %n%|$2";
+    # someone says a hilight
+    pubmsg_hilight_channel = "$0$4$1$2$3";
+    pubmsg_me = "%n$0 %n%|$1";
+    # someone @s me
+    pubmsg_me_channel = "$0$1$2";
+    query_move_notify = "Query with $0 is already created to window $1, use /WINDOW ITEM MOVE $0 to move it to this window";
+    query_server_changed = "Query with $0 changed to server $1";
+    query_start = "Starting query in $1 with $0";
+    query_stop = "Closing query with $0";
+    quit = "%n$0 %|has quit irc ($2)%n";
+    # someone quits (once)
+    quit_once = "%n$0 %|has quit irc ($2)%n";
+    # someone quits (all)
+    refnum_too_low = "Window number must be greater than 1";
+    server_changed = "Changed to $2 server $1";
+    server_list = "$0: $1:$2 ($3)";
+    server_lookup_list = "$0: $1:$2 ($3) (connecting...)";
+    server_quit = "Disconnecting from server $0: $1";
+    server_reconnect_list = "$0: $1:$2 ($3) ($5 left before reconnecting)";
+    server_reconnect_not_found = "Reconnection tag $0 not found";
+    server_reconnect_removed = "Removed reconnection to server $0:$1";
+    servertag = "$0";
+    # server tag
+    set_item = "$0 = $1";
+    set_not_boolean = "Setting $0 isn't boolean, use /SET";
+    set_server_sticky = "Window's server set sticky";
+    set_title = "[$0]";
+    set_unknown = "Unknown setting $0";
+    setupserver_added = "Server $0 saved";
+    setupserver_not_found = "Server $0 not found";
+    setupserver_removed = "Server $0 removed";
+    talking_in = "You are now talking in $0";
+    talking_with = "You are now talking with $0";
+    theme_changed = "Using now theme $0 ($1)";
+    theme_not_found = "Theme $0 not found";
+    theme_save_failed = "Error saving theme to $0: $1";
+    theme_saved = "Theme saved to $0";
+    timestamp = "{timestamp $Z}  ";
+    topic_unset = "%n$1 %r× %n%|$0 clears the topic";
+    # topic unset
+    translation_file_error = "Error parsing translation table file $0";
+    translation_not_found = "Error opening translation table file $0: $1";
+    unignored = "Unignored $0";
+    unknown_chat_protocol = "Unknown chat protocol: $0";
+    unknown_chatnet = "Unknown chat network: $0 (create it with /IRCNET ADD)";
+    unknown_server_tag = "Unknown server tag: $0";
+    unset_server_sticky = "Window's server isn't sticky anymore";
+    window_info_bound_item = "        : $[!30]0 $[!15]1 $2";
+    window_info_bound_items_footer = "";
+    window_info_bound_items_header = "Bounds  :  Name                           Server tag";
+    window_info_footer = "";
+    window_info_header = "";
+    window_info_history = "History : $0";
+    window_info_item = "$[7]0: $[!30]1 $2";
+    window_info_items_footer = "";
+    window_info_items_header = "Items   :  Name                           Server tag";
+    window_info_level = "Level   :$0";
+    window_info_name = "Name    :$0";
+    window_info_refnum = "Window  :  #$0";
+    window_info_refnum_sticky = "Window  :  #$0 (sticky)";
+    window_info_server = "Server  :$0";
+    window_info_server_sticky = "Server  :$0 (sticky)";
+    window_info_size = "Size    :$0x$1";
+    window_info_theme = "Theme   :$0$1";
+    window_level = "Window level is now $0";
+    window_name_not_unique = "Window names must be unique";
+    window_theme = "Using theme $0 in this window";
+    window_theme_changed = "Using now theme  $0 ($1) in this window";
+    window_theme_default = "No theme is set for this window";
+    window_theme_removed = "Removed theme from this window";
+    windowlist_footer = "";
+    windowlist_header = "Ref Name                 Active item     Server          Level";
+    windowlist_line = "$[3]0 %|$[20]1 $[15]2 $[15]3 $4";
+    windowlog_file = "Window LOGFILE set to $0";
+    windowlog_file_logging = "Can't change window's logfile while log is on";
+    windows_layout_reset = "Layout of windows reset to defaults";
+    windows_layout_saved = "Layout of windows is now remembered next time you start irssi";
+    your_nick = "%KYour nickname is $0%n";
+    # what is my nick
+    your_nick_changed = "%KYou're now known as $1%n";
+    # my /nick
+  };
+
+  "fe-common/irc/dcc" = {
+    action_dcc = "$0$1";
+    action_dcc_query = "$0$1";
+    dcc_cant_create = "DCC can't create file $0";
+    dcc_chat = "DCC CHAT from $0 [$1 port $2]";
+    dcc_chat_channel = "DCC CHAT from $0 [$1:$2] requested in channel $3";
+    dcc_chat_connected = "DCC CHAT connection with  $0 [$1 port $2] established";
+    dcc_chat_disconnected = "DCC lost chat to  $0";
+    dcc_chat_not_found = "No DCC CHAT connection open to  $0";
+    dcc_close = "DCC $0 close for  $1 [ $2]";
+    dcc_connect_error = "DCC can't connect to  $0 port  $1";
+    dcc_ctcp = " >>>DCC CTCP  $1 received from  $0: $2";
+    dcc_get_aborted = "DCC aborted receiving file  $0 from  $1";
+    dcc_get_complete = "DCC received file  $0 [$1kB] from  $2 in  $3 secs [$4kB/s]";
+    dcc_get_connected = "DCC receiving file  $0 from  $1 [$2 port $3]";
+    dcc_get_not_found = "DCC no file offered by  $0";
+    dcc_invalid_ctcp = "DCC received CTCP  $0 with invalid parameters from  $1";
+    dcc_list_footer = "{line_start_irssi} ];";
+    dcc_list_header = "{line_start_irssi}DCC connections:";
+    dcc_list_line_chat = "Chat ->  $0 $1";
+    dcc_list_line_file = "File ->  $0 $1 : $2k of $3k ($4%%) - $5kB/s - $6";
+    dcc_lowport = " Warning: Port sent withDCC request is a lowport ($0, $1) - the address/port could be fake";
+    dcc_msg = " dcc $0$1";
+    dcc_msg_query = "nick $0$1";
+    dcc_rejected = "DCC $0 was rejected by  $1 [ $2]";
+    dcc_request_send = "DCC $0 request sent to  $1: $2";
+    dcc_send = "DCC SEND from  $0 [$1 port $2]: $3 [$4 bytes]";
+    dcc_send_aborted = "DCC aborted sending file  $0 for  $1";
+    dcc_send_channel = "DCC SEND from  $0 [$1 port $2]: $3 [$4 bytes] requested in channel  $5";
+    dcc_send_complete = "DCC sent file  $0 [ $1kB] for  $2 in  $3 secs [ $4kB/s]";
+    dcc_send_connected = "DCC sending file  $0 for  $1 [$2 port $3]";
+    dcc_send_exists = "DCC already sending file  $0 for  $1";
+    dcc_send_file_open_error = "DCC can't open file  $0: $1";
+    dcc_send_not_found = "DCC not sending file  $1 to  $0";
+    dcc_unknown_ctcp = "DCC unknown ctcp  $0 from  $1 [$2]";
+    dcc_unknown_reply = "DCC unknown reply  $0 from  $1 [$2]";
+    dcc_unknown_type = "DCC unknown type  $0";
+    own_dcc = " dcc  $1$2";
+    own_dcc_action = "$0 $1$2";
+    own_dcc_action_query = "$0$2";
+    own_dcc_ctcp = " ctcp $0$1 $2";
+    own_dcc_query = "$0$2";
+  };
+
+  "fe-text" = {
+    cant_hide_last = "You can't hide the last window";
+    cant_hide_sticky_windows = "Use /WINDOW STICK OFF to hide this sticky window";
+    cant_show_sticky_windows = "Use /WINDOW STICK OFF to show this sticky window";
+    lastlog_count = " Lastlog: $0 lines";
+    lastlog_end = "End of Lastlog";
+    lastlog_start = "Lastlog:";
+    lastlog_too_long = "/LASTLOG would print $0 lines. Use the -force option (if you really want to)";
+    refnum_not_found = "Window number $0 not found";
+    window_info_sticky = "Sticky  : $0";
+    window_not_sticky = "Window is not sticky";
+    window_scroll = "Window scroll mode is now $0";
+    window_scroll_unknown = "Unknown scroll mode $0 (ON/OFF/DEFAULT)";
+    window_set_sticky = "Window set sticky";
+    window_too_small = "Not enough room to resize this window";
+    window_unset_sticky = "Window is not sticky anymore";
+  };
+
+  "fe-common/irc" = {
+    action_private = "$0$1$2";
+    action_private_query = "$0$2";
+    action_public = "%r$0 %|$1%n";
+    # other people /me
+    action_public_channel = "$0$1$2";
+    action_wallops = "WALLOP $0 $1";
+    ask_oper_pass = "Operator password:";
+    away = "You have been marked as being away";
+    banlist = "$0 -  $1: ban  $2";
+    banlist_long = "$0 -  $1: ban  $2  by  $3, $4 secs ago";
+    bantype = "Ban type changed to  $0";
+    chanmode_change = "%n$0 %r× %n%|$1 by $2";
+    # chanmode change
+    channel_created = "%n$0 %r× %n%|created <$1>";
+    # channel created
+    channel_mode = "%n$0 %r× %n%|$1";
+    # channel mode
+    channel_rejoin = "Channel $0 is temporarily unavailable. Setting up a rejoin, to not rejoin, use /rmrejoins";
+    channel_synced = "%n$0 %r× %n%|synchronized in $1s";
+    # channel synced
+    ctcp_ping_reply = "CTCP PING reply from  $0: $1.$[-3.0]2 seconds";
+    ctcp_reply = "CTCP $0 reply from  $1: $2";
+    ctcp_reply_channel = "CTCP $0 reply from $1 in channel $3: $2";
+    ctcp_requested = "$0 $1 requested $2 from $3";
+    ebanlist = "$0: ban exception  $1";
+    ebanlist_long = "$0: ban exception  $1  by  $2, $3 secs ago";
+    end_of_who = "End of /WHO list";
+    end_of_whois = "End of WHOIS";
+    end_of_whowas = "End of WHOWAS";
+    error = " ERROR $0";
+    invitelist = "$0: invite  $1";
+    inviting = "Inviting  $0 to  $1";
+    ircnet_added = "Ircnet $0 saved";
+    ircnet_footer = "";
+    ircnet_header = "Ircnets:";
+    ircnet_line = "$0: $1";
+    ircnet_not_found = "Ircnet $0 not found";
+    ircnet_removed = "Ircnet $0 removed";
+    joinerror_bad_key = "Join fails:  $0 (Wrong channel key)";
+    joinerror_bad_mask = "Join fails:  $0 (Bad channel mask)";
+    joinerror_banned = "Join fails:  $0 (You are banned)";
+    joinerror_duplicate = "Channel  $0 already exists - cannot create it";
+    joinerror_full = "Join fails:  $0 (Channel is full)";
+    joinerror_invite = "Join fails:  $0 (You must be invited)";
+    joinerror_toomany = "Join fails:  $0 (You have joined to too many channels)";
+    joinerror_unavail = "Join fails:  $0 (Channel is temporarily unavailable)";
+    kill = "You were  killed by  $0  $1  $2  Path: $3";
+    kill_server = "You were  killed by  $0  $1  Path: $2";
+    netsplit = "  Netsplit <<<  $0 %g<%g-%g>  $1 quits: $2";
+    netsplit_join = "  Netsplit >>> $0";
+    netsplit_join_more = "  Netsplit >>> $0 (+$1 more)";
+    netsplit_more = "  Netsplit <<<  $0 <-%n>  $1 quits: $2 (+$3 more)";
+    netsplits_footer = "";
+    netsplits_header = "Nick      Channel    Server               Splitted server";
+    netsplits_line = "$[9]0 $[10]1 $[20]2 $3";
+    nick_away = "$0 is away: $1";
+    nick_in_use = "Nick  $0 is already in use";
+    nick_unavailable = "Nick  $0 is temporarily unavailable";
+    no_bans = "No bans in channel  $0";
+    no_invitelist = "Invite list is empty in channel  $0";
+    no_netsplits = "There are no net splits";
+    no_such_channel = "$0: No such channel";
+    no_such_nick = "$0: No such nick/channel";
+    no_topic = "";
+    # when theres no topic
+    not_chanop = "You're not channel operator in $0";
+    notice_private = "$0$1$2";
+    notice_public = "$0$1$2";
+    notice_server = "$0$1";
+    online = "Users online: $0";
+    own_action = "%r$0 %|$1%n";
+    # i do a /me
+    own_action_target = "$0$2$1";
+    own_ctcp = "$0$1$2";
+    own_notice = "$0$1";
+    pong = "PONG received from $0: $1";
+    server_chanmode_change = "%n$0 %r× %n%|$1 by $2";
+    # server chanmode change
+    setupserver_footer = "";
+    setupserver_header = "Server               Port  Network    Settings";
+    setupserver_line = "%|$[!20]0 $[5]1 $[10]2 $3";
+    silence_line = "$0: silence  $1";
+    silenced = "Silenced $0";
+    topic = "%n$0 %r× %n%|$1";
+    # topic on join
+    topic_info = "";
+    # topic_info = "%K-- $0 <$1>%n";
+    # topic info
+    unaway = "You are no longer marked as being away";
+    unknown_mode = "Unknown mode character $0";
+    unsilenced = "Unsilenced  $0";
+    url = "%n$0 %r× %n%|$1";
+    # channel url
+    user_mode = "Your user mode is $0";
+    usermode_change = "Mode change $0 for user $1";
+    wallops = "WALLOP $0 $1";
+    who = "$[-10]0 %| $[!9]1 $[!3]2 $[!2]3 $4@$5   $6";
+    whois = "$0 [$1@$2]%:ircname:  $3";
+    whois_away = "away: %|$1";
+    whois_channels = "channels: %|$1";
+    whois_help = "...is available for help";
+    whois_idle = "idle:     %|$1 days $2 hours $3 mins $4 secs";
+    whois_idle_signon = "idle:     %|$1 days $2 hours $3 mins $4 secs (signon: $5)";
+    whois_modes = "modes: $1";
+    whois_not_found = "There is no such nick $0";
+    whois_oper = "$1";
+    whois_realhost = "hostname: $1-";
+    whois_registered = "...has registered this nick";
+    whois_server = "server:   %|$1 ($2)";
+    whois_special = "%|$1";
+    whois_usermode = "usermode: $1";
+    whowas = "$0 [$1@$2]%:ircname: $3";
+    # who was that
+    your_nick_owned = "Your nick is owned by $3 [$1@$2]";
+    # bad news
+  };
+
+  "fe-common/perl" = {
+    no_scripts_loaded = "No scripts are loaded";
+    script_error = " Error in script $0: ";
+    script_list_footer = "";
+    script_list_header = "Loaded scripts: ";
+    script_list_line = "$[!15]0 $1";
+    script_loaded = "Loaded script $0";
+    script_not_found = "Script $0 not found";
+    script_not_loaded = "Script $0 is not loaded";
+    script_unloaded = "Unloaded script $0";
+  };
+
+  "fe-common/irc/notifylist" = {
+    notify_away = "$0 [$5] [$1@$2] [ $3] is now away: $4";
+    notify_join = "$0 [$1@$2] [ $3] has joined to $4";
+    notify_list = "$0: $1 $2 $3";
+    notify_list_empty = "The notify list is empty";
+    notify_offline = "Offline: $0";
+    notify_online = "On $0:  $1";
+    notify_part = "$0 has left $4";
+    notify_unaway = "$0 [$4] [$1@$2] [ $3] is now unaway";
+    notify_unidle = "$0 [$5] [$1@$2] [ $3] just stopped idling";
+  };
+
+};
+

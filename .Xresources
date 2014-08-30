@@ -1,0 +1,90 @@
+*foreground: #cccaca
+*background: #3f3f3f
+*borderColor: #3f3f3f
+*color0: #383838
+*color1: #d3b3b5
+*color2: #b5d3b3
+*color3: #d3d1b3
+*color4: #b3b5d3
+*color5: #d1b3d3
+*color6: #b3d3d1
+*color7: #d0d0d0
+*color8: #494949
+*color9: #e2ccce
+*color10: #cee2cc
+*color11: #e2e0cc
+*color12: #cccee2
+*color13: #e0cce2
+*color14: #cce2e0
+*color15: #e2e2e2
+
+URxvt*foreground: #cccaca
+URxvt*background: #3f3f3f
+URxvt*borderColor: #3f3f3f
+URxvt*color0: #383838
+URxvt*color1: #d3b3b5
+URxvt*color2: #b5d3b3
+URxvt*color3: #d3d1b3
+URxvt*color4: #b3b5d3
+URxvt*color5: #d1b3d3
+URxvt*color6: #b3d3d1
+URxvt*color7: #d0d0d0
+URxvt*color8: #494949
+URxvt*color9: #e2ccce
+URxvt*color10: #cee2cc
+URxvt*color11: #e2e0cc
+URxvt*color12: #cccee2
+URxvt*color13: #e0cce2
+URxvt*color14: #cce2e0
+URxvt*color15: #e2e2e2
+
+XTerm*foreground: #cccaca
+XTerm*background: #3f3f3f
+XTerm*borderColor: #3f3f3f
+XTerm*color0: #383838
+XTerm*color1: #d3b3b5
+XTerm*color2: #b5d3b3
+XTerm*color3: #d3d1b3
+XTerm*color4: #b3b5d3
+XTerm*color5: #d1b3d3
+XTerm*color6: #b3d3d1
+XTerm*color7: #d0d0d0
+XTerm*color8: #494949
+XTerm*color9: #e2ccce
+XTerm*color10: #cee2cc
+XTerm*color11: #e2e0cc
+XTerm*color12: #cccee2
+XTerm*color13: #e0cce2
+XTerm*color14: #cce2e0
+XTerm*color15: #e2e2e2
+
+*faceName: lemon:size=8:antialias=false
+*font: lemon:size=8:antialias=false
+*boldFont: lemon:size=8:antialias=false
+*boldMode: false
+*allowBoldFonts: false
+*geometry: 100x24
+*cursorUnderline: 0
+
+URxvt*inputMethod: ibus
+URxvt*preeditType: OverTheSpot
+URxvt*boldMode: false
+URxvt*allowBoldFonts: false
+URxvt*geometry: 100x24
+URxvt*cursorUnderline: 0
+URxvt*scrollBar: false
+URxvt*scrollBar_right: false
+URxvt*scrollstyle: rxvt
+URxvt*font: xft:lemon:pixelsize=7:antialias=false:hinting=true
+URxvt*boldFont: xft:lemon:pixelsize=7:antialias=false:hinting=true
+-- URxvt*depth: 32
+-- URxvt*background: [100]#3f3f3f
+-- URxvt*borderColor: [100]#3f3f3f
+
+XTerm*faceName: lemon:size=8:antialias=false
+XTerm*font: lemon:size=8:antialias=false
+XTerm*boldFont: lemon:size=8:antialias=false
+XTerm*boldMode: false
+XTerm*allowBoldFonts: false
+XTerm*geometry: 100x24
+XTerm*cursorUnderline: 0
