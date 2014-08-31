@@ -117,6 +117,8 @@ export GEM_HOME=$(ruby -e 'puts Gem.user_dir')
 
 export PATH="home/akarin/.gem/ruby/2.1.0/bin:$PATH"
 
+export EDITOR=vim
+
 # export GTK_IM_MODULE=ibus
 # export XMODIFIERS=@im=ibus
 # export QT_IM_MODULE=ibus

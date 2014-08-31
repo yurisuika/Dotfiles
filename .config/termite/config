@@ -1,0 +1,72 @@
+[options]
+resize_grip = false
+scroll_on_output = false
+scroll_on_keystroke = true
+audible_bell = false
+visible_bell = false
+mouse_autohide = false
+allow_bold = false
+dynamic_title = true
+urgent_on_bell = true
+clickable_url = true
+font = Lemon 7
+scrollback_lines = 1000
+search_wrap = true
+#icon_name = terminal
+geometry = 504x244
+
+# "system", "on" or "off"
+cursor_blink = off
+
+# "block", "underline" or "ibeam"
+cursor_shape = underline
+
+# $BROWSER is used by default
+browser = nightly
+
+# word characters used for word selection
+# (default if unset: all graphic non-punctuation/space characters)
+word_chars = -A-Za-z0-9,./?%&#:_=+@~
+
+# set size hints for the window
+size_hints = false
+
+[colors]
+foreground = #cccaca
+foreground_bold = #cccaca
+foreground_dim = #cccaca
+background = #3f3f3f
+cursor = #a98d9b
+
+# if unset, will reverse foreground and background
+highlight = #3a3a3a
+
+# barrage
+color0 = #383838
+color1 = #d3b3b5
+color2 = #b5d3b3
+color3 = #d3d1b3
+color4 = #b3b5d3
+color5 = #d1b3d3
+color6 = #b3d3d1
+color7 = #d0d0d0
+color8 = #494949
+color9 = #e2ccce
+color10 = #cee2cc
+color11 = #e2e0cc
+color12 = #cccee2
+color13 = #e0cce2
+color14 = #cce2e0
+color15 = #e2e2e2
+
+[hints]
+#font = Lemon 7
+#foreground = #cccaca
+#background = #3f3f3f
+#padding = 2
+#border = #3f3f3f
+#border_width = 0.5
+#roundness = 2.0
+
+# vim: ft=dosini cms=#%s
+

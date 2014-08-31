@@ -15,7 +15,7 @@ local vain    = require("vain")
 local lain    = require("lain")
 local drop    = require("scratchdrop")
 
-vain.widgets.terminal = "urxvt"
+vain.widgets.terminal = "termite"
 
 -- awful.util.spawn_with_shell("unagi &")
 -- awful.util.spawn_with_shell("cairo-compmgr &")
@@ -51,10 +51,10 @@ end
 beautiful.init("/usr/share/awesome/themes/suika/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
-terminal = "urxvt" or "urxvtc"
+terminal = "termite" or "urxvt" or "urxvtc"
 editor = os.getenv("EDITOR") or "nano"
 editor_cmd = terminal .. " -e " .. editor
-browser = "firefox"
+browser = "nightly"
 
 -- Default modkey.
 -- Usually, Mod4 is the key with a logo between Control and Alt.
@@ -633,7 +633,7 @@ globalkeys = awful.util.table.join(
 
 
     -- Dropdown terminal
-    awful.key({ modkey, }, "z", function () drop("urxvt -name urxvt_drop -e tmux", "top", "left", 374, 104, true) end),
+    awful.key({ modkey, }, "z", function () drop("termite -name termite_drop", "top", "left", 374, 104, true) end),
 
 --    awful.key({ modkey,           }, "z",      function () drop(terminal, "top", "center", 1, 0.5) end),
 
@@ -691,8 +691,8 @@ awful.key({ modkey, "Shift"   }, "r",
 
 
 -- On the fly useless gaps change
---    awful.key({ altkey, "Control" }, "+", function () lain.util.useless_gaps_resize(1) end),
---    awful.key({ altkey, "Control" }, "-", function () lain.util.useless_gaps_resize(-1) end),
+    awful.key({ altkey, "Control" }, "+", function () lain.util.useless_gaps_resize(1) end),
+    awful.key({ altkey, "Control" }, "-", function () lain.util.useless_gaps_resize(-1) end),
 
     -- Layout manipulation
     awful.key({ modkey, "Shift" }, "j", function () awful.client.swap.byidx( 1) end),
