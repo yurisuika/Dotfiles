@@ -633,9 +633,9 @@ globalkeys = awful.util.table.join(
 
 
     -- Dropdown terminal
-    awful.key({ modkey, }, "z", function () drop("termite -name termite_drop", "top", "left", 374, 104, true) end),
+--    awful.key({ modkey, }, "z", function () drop("termite -name termite_drop -e tmux", "top", "left", 374, 104, true) end),
 
---    awful.key({ modkey,           }, "z",      function () drop(terminal, "top", "center", 1, 0.5) end),
+    awful.key({ modkey,           }, "z",      function () drop(terminal, "top", "left", 374, 104, true) end),
 
     -- Widgets popups
 --    awful.key({ altkey, }, "c", function () lain.widgets.calendar:show(7) end),
