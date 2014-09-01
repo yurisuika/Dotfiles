@@ -54,13 +54,13 @@ hi StorageClass            ctermfg=7
 hi String                  ctermfg=2
 hi Structure               ctermfg=9
 hi Tag                     ctermfg=5
-hi Title                   ctermfg=3   ctermbg=none cterm=bold
+hi Title                   ctermfg=3   ctermbg=10 cterm=bold
 hi Todo                    ctermfg=6  ctermbg=0
 hi Typedef                 ctermfg=3
 hi Type                    ctermfg=9
-hi Underlined              ctermfg=104 ctermbg=0
+hi Underlined              ctermfg=10 ctermbg=0
 hi VertSplit               ctermfg=0  ctermbg=0 cterm=none
-hi Visual                  ctermfg=210 ctermbg=0
+hi Visual                  ctermfg=10 ctermbg=0
 hi VisualNOS               ctermfg=10  ctermbg=0  cterm=bold
 hi WarningMsg              ctermfg=7   
 hi WildMenu                ctermbg=0   ctermfg=1
@@ -78,12 +78,16 @@ hi xmlTag                 ctermfg=5
 hi xmlEndTag              ctermfg=5
 hi xmlTagName             ctermfg=13
 
-    " statusline
-hi StatusLine              ctermfg=7   ctermbg=0    cterm=none
-hi StatusLineNC            ctermfg=0   ctermbg=7
-hi StatusModFlag           ctermfg=7   ctermbg=0    cterm=none
+" statusline
+hi StatusLine              ctermfg=2   ctermbg=0    cterm=none
+hi StatusLineNC            ctermfg=0   ctermbg=2
+hi StatusModFlag           ctermfg=2   ctermbg=0    cterm=none
 hi StatusRO                ctermfg=6   ctermbg=0    cterm=none
 hi StatusHLP               ctermfg=2   ctermbg=0    cterm=none
 hi StatusPRV               ctermfg=3   ctermbg=0    cterm=none
 hi StatusFTP               ctermfg=4   ctermbg=0    cterm=none
 
+" tabs
+hi TabLineFill             ctermfg=10 ctermbg=0
+hi TabLine                 ctermfg=0 ctermbg=10
+hi TabLineSel              ctermfg=10 ctermbg=0

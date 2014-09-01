@@ -83,10 +83,10 @@ set laststatus=1
 """"""""""""
 if &term=~"linux"
 " set laststatus=0
-colorscheme anotherdark
-hi ColorColumn ctermbg=234
-hi CursorLine ctermbg=234	cterm=none
-hi CursorLineNr ctermfg=255
+colorscheme suika
+hi ColorColumn ctermbg=10
+hi CursorLine ctermbg=0	cterm=none
+hi CursorLineNr ctermfg=10
 endif
 
 " vimpager only "
