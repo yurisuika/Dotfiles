@@ -66,6 +66,14 @@ XTerm*color15: #e2e2e2
 *geometry: 100x24
 *cursorUnderline: 0
 
+Xft.autohint: 0
+Xft.lcdfilter:  lcddefault
+Xft.hintstyle:  hintmedium
+Xft.hinting: 1
+Xft.antialias: 0
+Xft.rgba: none
+Xft.dpi: 96
+
 URxvt*inputMethod: ibus
 URxvt*preeditType: OverTheSpot
 URxvt*boldMode: false

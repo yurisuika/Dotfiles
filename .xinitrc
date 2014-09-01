@@ -15,6 +15,23 @@ fi
 
 [[ -e ~/.Xresources ]] && [[ -n ${DISPLAY} ]] && xrdb -merge ~/.Xresources  >/dev/null 2>&1
 
+
+
+# XFT_SETTINGS="
+# Xft.antialias:  0
+# Xft.autohint:   0
+# Xft.dpi:        96
+# Xft.hinting:    1
+# Xft.hintstyle:  hintmedium
+# Xft.lcdfilter:  lcddefault
+# Xft.rgba:       none
+ #"
+
+# if [ "$SET_XFT_SETTINGS" = "true" ]; then
+#   echo "$XFT_SETTINGS" | xrdb -merge > /dev/null 2>&1
+# fi
+
+
 # exec gnome-session
 # exec startkde
 # exec startxfce4

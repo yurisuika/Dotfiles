@@ -34,7 +34,7 @@ local naughty = {}
 --- Naughty configuration - a table containing common popup settings.
 naughty.config = {}
 --- Space between popups and edge of the workarea. Default: 4
-naughty.config.padding = 4
+naughty.config.padding = 9
 --- Spacing between popups. Default: 1
 naughty.config.spacing = 1
 --- List of directories that will be checked by getIcon()
@@ -377,10 +377,10 @@ function naughty.notify(args)
     textbox:set_font(font)
 
     local function setMarkup(pattern, replacements)
-        textbox:set_markup(string.format('<b>%s</b>%s', title, text:gsub(pattern, replacements)))
+        textbox:set_markup(string.format('%s%s', title, text:gsub(pattern, replacements)))
     end
     local function setText()
-        textbox:set_text(string.format('%s %s', title, text))
+        textbox:set_text(string.format('%s%s', title, text))
     end
 
     -- Since the title cannot contain markup, it must be escaped first so that
