@@ -58,9 +58,9 @@ XTerm*color13: #e0cce2
 XTerm*color14: #cce2e0
 XTerm*color15: #e2e2e2
 
-*faceName: lemon:size=8:antialias=false
-*font: lemon:size=8:antialias=false
-*boldFont: lemon:size=8:antialias=false
+*faceName: lemon:size=7:antialias=false
+*font: lemon:size=7:antialias=false
+*boldFont: lemon:size=7:antialias=false
 *boldMode: false
 *allowBoldFonts: false
 *geometry: 100x24
@@ -89,9 +89,9 @@ URxvt*boldFont: xft:lemon:pixelsize=7:antialias=false:hinting=true
 -- URxvt*background: [100]#3f3f3f
 -- URxvt*borderColor: [100]#3f3f3f
 
-XTerm*faceName: lemon:size=8:antialias=false
-XTerm*font: lemon:size=8:antialias=false
-XTerm*boldFont: lemon:size=8:antialias=false
+XTerm*faceName: lemon:size=7:antialias=false
+XTerm*font: lemon:size=7:antialias=false
+XTerm*boldFont: lemon:size=7:antialias=false
 XTerm*boldMode: false
 XTerm*allowBoldFonts: false
 XTerm*geometry: 100x24
