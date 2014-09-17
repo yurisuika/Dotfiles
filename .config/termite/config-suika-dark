@@ -10,7 +10,7 @@ dynamic_title = true
 urgent_on_bell = true
 clickable_url = true
 font = Lemon 7
-scrollback_lines = 2048
+scrollback_lines = 1000
 search_wrap = true
 #icon_name = terminal
 geometry = 504x244
@@ -32,32 +32,32 @@ word_chars = -A-Za-z0-9,./?%&#:_=+@~
 size_hints = false
 
 [colors]
-foreground = #cccaca
-foreground_bold = #cccaca
-foreground_dim = #cccaca
+foreground = #d5d5d5
+foreground_bold = #d5d5d5
+foreground_dim = #d5d5d5
 background = #3f3f3f
-cursor = #a98d9b
+cursor = #4e4e4e
 
 # if unset, will reverse foreground and background
-highlight = #3a3a3a
+highlight = #5d5d5d
 
 # barrage
 color0 = #4e4e4e
-color1 = #d3b3b8
+color1 = #d3b3b5
 color2 = #b5d3b3
-color3 = #d0d3b3
-color4 = #d3c9b3
-color5 = #d3bcb3
-color6 = #c3d3b3
-color7 = #d5d5d5
-color8 = #5d5d5d
-color9 = #e2cccf
+color3 = #d3b3b5
+color4 = #b5d3b3
+color5 = #d3b3b5
+color6 = #b5d3b3
+color7 = #c3c3c3
+color8 = #717171
+color9 = #e2ccce
 color10 = #cee2cc
-color11 = #e0e2cc
-color12 = #e2dbcc
-color13 = #e2d2cc
-color14 = #d7e2cc
-color15 = #f3f3f3
+color11 = #e2ccce
+color12 = #cee2cc
+color13 = #e2ccce
+color14 = #cee2cc
+color15 = #d7d7d7
 
 [hints]
 #font = Lemon 7

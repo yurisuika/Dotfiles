@@ -32,9 +32,9 @@ word_chars = -A-Za-z0-9,./?%&#:_=+@~
 size_hints = false
 
 [colors]
-foreground = #cccaca
-foreground_bold = #cccaca
-foreground_dim = #cccaca
+foreground = #d5d5d5
+foreground_bold = #d5d5d5
+foreground_dim = #d5d5d5
 background = #3f3f3f
 cursor = #a98d9b
 
@@ -43,20 +43,20 @@ highlight = #3a3a3a
 
 # barrage
 color0 = #4e4e4e
-color1 = #d3b3b8
-color2 = #b5d3b3
-color3 = #d0d3b3
-color4 = #d3c9b3
-color5 = #d3bcb3
-color6 = #c3d3b3
+color1 = #e0d6db
+color2 = #d5c8ce
+color3 = #cab9c1
+color4 = #bfaab5
+color5 = #b49ca8
+color6 = #a98d9b
 color7 = #d5d5d5
 color8 = #5d5d5d
-color9 = #e2cccf
-color10 = #cee2cc
-color11 = #e0e2cc
-color12 = #e2dbcc
-color13 = #e2d2cc
-color14 = #d7e2cc
+color9 = #cee2cc
+color10 = #d1e0ce
+color11 = #d4ded1
+color12 = #d7dcd4
+color13 = #dadad6
+color14 = #ddd8d8
 color15 = #f3f3f3
 
 [hints]
