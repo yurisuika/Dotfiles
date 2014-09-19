@@ -1,0 +1,40 @@
+/***********
+ * sidebar *
+ ***********/
+.sidebar,
+.sidebar.view,
+.sidebar .view {
+    background-color: @theme_base_color;
+    font-weight: normal;
+    color: @tooltip_bg_color;
+}
+
+.sidebar .image:selected {
+    color: @tooltip_bg_color;
+}
+
+.sidebar .image:selected:prelight,
+.sidebar .image:selected:focus,
+.sidebar .image:selected:hover {
+    color: @tooltip_fg_color;
+}
+
+.sidebar .cell:selected,
+.sidebar .cell:selected:focus {
+    color: @tooltip_fg_color;
+}
+
+.sidebar .frame {
+    border-width: 0;
+}
+
+
+.sidebar-pane-separator,
+.sidebar-pane-separator:prelight,
+.sidebar-pane-separator:selected {
+
+    border-width: 0;
+    -GtkPaned-handle-size: 0;
+    background-image: none;
+    background-color: transparent;
+}

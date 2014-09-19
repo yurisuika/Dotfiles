@@ -1,0 +1,17 @@
+/*************
+ * assistant *
+ *************/
+GtkAssistant .sidebar .highlight {
+    font: normal;
+}
+
+GtkAssistant .sidebar {
+    padding: 4px;
+    border-width: 0 1px 0 0;
+    border-style: solid;
+    border-right-color: @theme_bg_color;
+    border-radius: 0;
+    background-color: @theme_bg_color;
+    color: @theme_fg_color;
+}
+

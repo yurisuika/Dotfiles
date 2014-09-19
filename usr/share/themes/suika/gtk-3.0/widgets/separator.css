@@ -1,0 +1,97 @@
+/*************
+ * separator *
+ *************/
+ 
+.sidebar.view.separator,
+.view.separator,
+.separator {
+    border-width: 1px;
+    border-style: solid;
+    border-color: @theme_bg_color;
+    color: @theme_bg_color;
+}
+
+.button .separator,
+.button.separator {
+    color: @theme_bg_color;
+}
+
+.button .separator:insensitive,
+.button.separator:insensitive {
+    color: @theme_bg_color;
+}
+
+.primary-toolbar GtkSeparatorToolItem,
+.primary-toolbar .separator,
+.primary-toolbar .separator:insensitive,
+.toolbar GtkSeparatorToolItem,
+.toolbar .separator,
+.toolbar .separator:insensitive,
+.header-bar GtkSeparatorToolItem,
+.header-bar .separator,
+.header-bar .separator:insensitive {
+    border-color: @toolbar_bg_color;
+    color: @toolbar_bg_color;
+}
+
+.primary-toolbar .button .separator,
+.primary-toolbar .button.separator,
+.toolbar .button .separator,
+.toolbar .button.separator,
+.header-bar .button .separator,
+.header-bar .button.separator {
+    border-color: @toolbar_bg_color;
+}
+
+.primary-toolbar .button .separator:insensitive,
+.primary-toolbar .button.separator:insensitive,
+.toolbar .button .separator:insensitive,
+.toolbar .button.separator:insensitive,
+.header-bar .button .separator:insensitive,
+.header-bar .button.separator:insensitive {
+    border-color: @toolbar_bg_color;
+}
+
+.menuitem.separator {
+    -GtkMenuItem-horizontal-padding: 0;
+    -GtkWidget-separator-height: 1;
+
+    border-style: none;
+    color: @menu_bg_color;
+}
+
+GtkComboBox .separator {
+    border-style: none;
+
+    /* always disable separators */
+    -GtkWidget-wide-separators: true;
+    -GtkWidget-horizontal-separator: 0;
+    -GtkWidget-vertical-separator: 0;
+}
+
+.pane-separator,
+.pane-separator:prelight,
+.pane-separator:selected {
+    border-width: 0 1px;
+
+    background-image: none;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+.pane-separator.vertical,
+.pane-separator.vertical:prelight,
+.pane-separator.vertical:selected {
+    border-width: 1px 0;
+
+    background-image: none;
+}
+
+.toolbar .pane-separator,
+.titlebar .pane-separator {
+    background-color: transparent;
+    background-image: none;
+    border: none;
+    box-shadow: none;
+}
+

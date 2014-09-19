@@ -1,0 +1,27 @@
+style "tooltips"	= "default"
+{
+    bg[NORMAL]	  = @text_color
+    fg[NORMAL]	  = @tooltip_bg_color
+    bg[SELECTED]  = @text_color
+
+}
+widget "gtk-tooltip*"  			style "tooltips"
+class 		"*GtkTooltips*"		style "tooltips"
+widget_class 	"*Tooltips*"		style "tooltips"
+widget "*.nautilus-extra-view-widget" style:highest "tooltips"
+
+style "xfdesktop-icon-view"
+ { 
+    XfdesktopIconView::label-alpha = 0
+    XfdesktopIconView::selected-label-alpha = 170
+
+    base[NORMAL]	  = @tooltip_bg_color
+    fg[NORMAL]	  = @fg_color
+    base[SELECTED]  = @tooltip_bg_color
+    fg[SELECTED]  = @fg_color
+	engine "murrine" {
+    textstyle = 1
+    text_shade = 0.0
+}
+}
+widget_class "*XfdesktopIconView*" style "xfdesktop-icon-view"

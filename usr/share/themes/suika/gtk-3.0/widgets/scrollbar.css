@@ -1,0 +1,76 @@
+/*************
+ * scrollbar *
+ *************/
+.scrollbar {
+    border-width: 0px;
+    border-style: none;
+    padding: 0;
+}
+
+.scrollbars-junction,
+.scrollbar.trough {
+    border-width: 0;
+    border-radius: 0;
+    background-color: #3f3f3f;
+    background-image: none;
+}
+
+.scrollbar.button,
+.scrollbar.button:active,
+.scrollbar.button:active:hover {
+    border-width: 0;
+    border-radius: 0;
+    background-color: transparent;
+    background-image: none;
+    color: #3f3f3f;
+}
+
+.scrollbar.slider {
+    border-width: 0px;
+    border-color: #5d5d5d;
+    border-radius: 0;
+    background-color: #5d5d5d;
+}
+
+.scrollbar.slider:hover,
+.scrollbar.slider.vertical:hover {
+    border-width: 0px;
+    border-color: #5d5d5d;
+    border-radius: 0;
+    background-color: #5d5d5d;
+}
+
+.scrollbar.slider:active,
+.scrollbar.slider.vertical:active {
+    border-width: 0px;
+    border-color: #5d5d5d;
+    border-radius: 0;
+    background-color: #5d5d5d;
+}
+
+.scrollbar.slider.fine-tune:prelight:active {
+      background-size: 50%;
+      background-repeat: no-repeat;
+      background-position: center;
+}
+
+/* overlay scrollbar */
+OsThumb {
+    color: #5d5d5d;
+}
+
+OsThumb:selected,
+OsScrollbar:selected {
+    background-color: #5d5d5d;
+}
+
+OsThumb:active,
+OsScrollbar:active {
+    background-color: #5d5d5d;
+}
+
+OsThumb:insensitive,
+OsScrollbar:insensitive {
+    background-color: #5d5d5d;
+}
+
