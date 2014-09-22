@@ -1,4 +1,4 @@
-*foreground: #cccaca
+*foreground: #a6a3a3
 *background: #3f3f3f
 *borderColor: #3f3f3f
 *color0: #4e4e4e
@@ -8,7 +8,7 @@
 *color4: #d3c9b3
 *color5: #d3bcb3
 *color6: #c3d3b3
-*color7: #d5d5d5
+*color7: #cccaca
 *color8: #5d5d5d
 *color9: #e2cccf
 *color10: #cee2cc
@@ -16,9 +16,9 @@
 *color12: #e2dbcc
 *color13: #e2d2cc
 *color14: #d7e2cc
-*color15: #f3f3f3
+*color15: #a6a3a3
 
-URxvt*foreground: #cccaca
+URxvt*foreground: #a6a3a3
 URxvt*background: #3f3f3f
 URxvt*borderColor: #3f3f3f
 URxvt*color0: #4e4e4e
@@ -28,7 +28,7 @@ URxvt*color3: #d0d3b3
 URxvt*color4: #d3c9b3
 URxvt*color5: #d3bcb3
 URxvt*color6: #c3d3b3
-URxvt*color7: #d5d5d5
+URxvt*color7: #cccaca
 URxvt*color8: #5d5d5d
 URxvt*color9: #e2cccf
 URxvt*color10: #cee2cc
@@ -36,10 +36,10 @@ URxvt*color11: #e0e2cc
 URxvt*color12: #e2dbcc
 URxvt*color13: #e2d2cc
 URxvt*color14: #d7e2cc
-URxvt*color15: #f3f3f3
+URxvt*color15: #a6a3a3
 
-XTerm*foreground: #cccaca
-XTerm*background: #3f3f3f
+XTerm*foreground: #a6a3a3
+XTerm*backgrouncmnd: #3f3f3f
 XTerm*borderColor: #3f3f3f
 XTerm*color0: #4e4e4e
 XTerm*color1: #d3b3b8
@@ -48,7 +48,7 @@ XTerm*color3: #d0d3b3
 XTerm*color4: #d3c9b3
 XTerm*color5: #d3bcb3
 XTerm*color6: #c3d3b3
-XTerm*color7: #d5d5d5
+XTerm*color7: #cccaca
 XTerm*color8: #5d5d5d
 XTerm*color9: #e2cccf
 XTerm*color10: #cee2cc
@@ -56,7 +56,7 @@ XTerm*color11: #e0e2cc
 XTerm*color12: #e2dbcc
 XTerm*color13: #e2d2cc
 XTerm*color14: #d7e2cc
-XTerm*color15: #f3f3f3
+XTerm*color15: #a6a3a3
 
 *faceName: lemon:size=7:antialias=false
 *font: lemon:size=7:antialias=false
