@@ -1,4 +1,4 @@
-*foreground: #a6a3a3
+*foreground: #cccaca
 *background: #3f3f3f
 *borderColor: #3f3f3f
 *color0: #4e4e4e
@@ -16,9 +16,9 @@
 *color12: #e2dbcc
 *color13: #e2d2cc
 *color14: #d7e2cc
-*color15: #a6a3a3
+*color15: #e5e4e4
 
-URxvt*foreground: #a6a3a3
+URxvt*foreground: #cccaca
 URxvt*background: #3f3f3f
 URxvt*borderColor: #3f3f3f
 URxvt*color0: #4e4e4e
@@ -36,9 +36,9 @@ URxvt*color11: #e0e2cc
 URxvt*color12: #e2dbcc
 URxvt*color13: #e2d2cc
 URxvt*color14: #d7e2cc
-URxvt*color15: #a6a3a3
+URxvt*color15: #e5e4e4
 
-XTerm*foreground: #a6a3a3
+XTerm*foreground: #cccaca
 XTerm*backgrouncmnd: #3f3f3f
 XTerm*borderColor: #3f3f3f
 XTerm*color0: #4e4e4e
@@ -56,7 +56,7 @@ XTerm*color11: #e0e2cc
 XTerm*color12: #e2dbcc
 XTerm*color13: #e2d2cc
 XTerm*color14: #d7e2cc
-XTerm*color15: #a6a3a3
+XTerm*color15: #e5e4e4
 
 *faceName: lemon:size=7:antialias=false
 *font: lemon:size=7:antialias=false

@@ -35,7 +35,28 @@ sub print_text_notify {
     my ($dest, $text, $stripped) = @_;
     my $server = $dest->{server};
 
-    return if (!$server || !($dest->{level} & MSGLEVEL_HILIGHT));
+    return if (!$server || !($dest->{level} & MSGLEVEL_PUBLIC));
+    notify($server, $dest->{target}, $stripped);
+
+    return if (!$server || !($dest->{level} & MSGLEVEL_MSGS));
+    notify($server, $dest->{target}, $stripped);
+
+    return if (!$server || !($dest->{level} & MSGLEVEL_TOPICS));
+    notify($server, $dest->{target}, $stripped);
+
+    return if (!$server || !($dest->{level} & MSGLEVEL_JOINS));
+    notify($server, $dest->{target}, $stripped);
+
+    return if (!$server || !($dest->{level} & MSGLEVEL_PARTS));
+    notify($server, $dest->{target}, $stripped);
+
+    return if (!$server || !($dest->{level} & MSGLEVEL_ACTIONS));
+    notify($server, $dest->{target}, $stripped);
+
+    return if (!$server || !($dest->{level} & MSGLEVEL_INVITES));
+    notify($server, $dest->{target}, $stripped);
+
+    return if (!$server || !($dest->{level} & MSGLEVEL_WALLOPS));
     notify($server, $dest->{target}, $stripped);
 }
 
@@ -62,6 +83,6 @@ sub dcc_request_notify {
 
 Irssi::signal_add('print text', 'print_text_notify');
 Irssi::signal_add('message private', 'message_private_notify');
-Irssi::signal_add('message', 'message_notify');
+Irssi::signal_add('message ', 'message_notify');
 Irssi::signal_add('dcc request', 'dcc_request_notify');
 

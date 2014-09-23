@@ -1,3 +1,22 @@
+servers = (
+  {
+    address = "irc.rizon.net";
+    chatnet = "rizon";
+    port = "6697";
+    password = "akarin";
+    use_ssl = "yes";
+    ssl_verify = "no";
+    autoconnect = "yes";
+  }
+);
+
+chatnets = {
+  rizon = {
+    type = "IRC";
+    autosendcmd = "/^msg NickServ IDENTIFY akarin;wait 2000";
+  };
+};
+
 channels = ( );
 
 aliases = {
