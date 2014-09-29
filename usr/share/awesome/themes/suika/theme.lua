@@ -81,6 +81,7 @@ theme.titlebar_minimize_button_normal_active = "/usr/share/awesome/themes/suika/
 theme.titlebar_minimize_button_focus_active  = "/usr/share/awesome/themes/suika/titlebar/minimise.png"
 
 
+-- theme.wallpaper = "/home/akarin/Pictures/Flandre C.png"
 theme.wallpaper = "/home/akarin/Pictures/flat.png"
 
 theme.layout_fairh = "/usr/share/awesome/themes/suika/layouts/fairh.png"
@@ -118,7 +119,7 @@ theme.awesome_icon = "/usr/share/awesome/icons/awesome16.png"
 theme.icon_theme = nil
 theme.tasklist_disable_icon = true
 
-theme.useless_gap_width = "9"
+theme.useless_gap_width = "8"
 
 return theme
 -- vim: filetype=lua:expandtab:shiftwidth=4:tabstop=8:softtabstop=4:textwidth=80

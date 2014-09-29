@@ -34,9 +34,9 @@ local naughty = {}
 --- Naughty configuration - a table containing common popup settings.
 naughty.config = {}
 --- Space between popups and edge of the workarea. Default: 4
-naughty.config.padding = 9
+naughty.config.padding = 4
 --- Spacing between popups. Default: 1
-naughty.config.spacing = 1
+naughty.config.spacing = 4
 --- List of directories that will be checked by getIcon()
 --   Default: { "/usr/share/pixmaps/", }
 naughty.config.icon_dirs = { "/usr/share/pixmaps/", }
@@ -67,8 +67,8 @@ naughty.config.presets = {
         timeout = 5
     },
     critical = {
-        bg = "#ff0000",
-        fg = "#ffffff",
+        bg = "#3f3f3f",
+        fg = "#cccaca",
         timeout = 0,
     }
 }
@@ -377,10 +377,10 @@ function naughty.notify(args)
     textbox:set_font(font)
 
     local function setMarkup(pattern, replacements)
-        textbox:set_markup(string.format('%s%s', title, text:gsub(pattern, replacements)))
+        textbox:set_markup(string.format('<b>%s</b>%s', title, text:gsub(pattern, replacements)))
     end
     local function setText()
-        textbox:set_text(string.format('%s%s', title, text))
+        textbox:set_text(string.format('%s %s', title, text))
     end
 
     -- Since the title cannot contain markup, it must be escaped first so that

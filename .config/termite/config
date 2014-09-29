@@ -13,7 +13,8 @@ font = Lemon 7
 scrollback_lines = 2048
 search_wrap = true
 #icon_name = terminal
-geometry = 504x244
+geometry = 502x242
+#geometry = 504x244
 
 # "system", "on" or "off"
 cursor_blink = off
